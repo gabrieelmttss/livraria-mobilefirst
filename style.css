@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+
+:root {
+    --cor-de-fundo: #C4C4C4;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --branco: #FFFFFF;
+    --fonte-poppins: 'Poppins', sans-serif;
+    --laranja: #EB9B00;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: white;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 0.7rem;
+    padding: 0.7rem 0.5rem;
+}
+
+.menu__hamburger {
+    display: inline-block;
+    width: 35px;
+    height: 40px;
+    background-image: url(img/Menu.svg);
+    background-repeat: no-repeat;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 70%;
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+}
+
+.lista-menu__item, .lista-menu__titulo {
+    background: white;
+    list-style-type: none;
+    font-family: var(--fonte-poppins);
+    font-weight: 700;
+    padding: 1rem 0rem 1rem 2rem;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked~.lista-menu {
+    display: block;
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.4rem;
+    background: var(--azul-degrade);
+    color: var(--branco);
+}
+
+.banner-h2 {
+    font-family:'Poppins', sans-serif;
+    font-size: 1.3rem;
+}
+
+.banner-p {
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+}
+
+.banner-input {
+    width: 90%;
+    border: 1px solid var(--branco);
+    border-radius: 2rem;
+    background: transparent;
+    padding: 1rem;
+    text-align: center;
+}
+
+.banner-input::placeholder {
+    font-family: var(--fonte-poppins);
+    color: var(--branco);
+    background-image: url(img/Pesquisa.svg);
+    background-repeat: no-repeat;
+    background-position: 1em;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5rem 0;
+}
+
+.swiper-h2 {
+    font-family: var(--fonte-poppins);
+    color: var(--laranja);
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: var(--branco);
+    padding: 0.6rem;
+}

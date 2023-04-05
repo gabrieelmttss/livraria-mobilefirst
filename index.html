@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="header__container">
+            <input class="checkbox" type="checkbox" id="menu">
+            <label for="menu">
+                <span class="menu__hamburger"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a class="lista-menu__link" href="#">Design & UX</a>
+                </li>
+            </ul>
+            <img src="img/Polygon 1 (Stroke).svg" alt="">
+        </div>
+        <div class="header__container">
+            <img src="img/Favoritos.svg" alt="">
+            <img src="img/Sacola.svg" alt="">
+            <img src="img/Usuário.svg" alt="">
+        </div>
+    </header>
+
+    <section class="banner-container">
+        <h2 class="banner-h2">Já sabe por onde começar?</h2>
+        <p class="banner-p">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner-input" name="" id="" placeholder="Qual será sua próxima leitura?">
+    </section>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <h2 class="swiper-h2">ÚLTIMOS LANÇAMENTOS</h2>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt=""></div>
+            <div class="swiper-slide"><img src="img/Arquitetura.svg" alt=""></div>
+            <div class="swiper-slide"><img src="img/Javascript.svg" alt=""></div>
+            <div class="swiper-slide"><img src="img/Nodejs.svg" alt=""></div>
+            <div class="swiper-slide"><img src="img/Portugol.svg" alt=""></div>
+            <div class="swiper-slide"><img src="img/ReactNative.svg" alt=""></div>
+            <div class="swiper-slide"><img src="img/Tuning.svg" alt=""></div>
+            ...
+        </div>
+
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
