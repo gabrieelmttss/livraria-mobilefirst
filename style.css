@@ -51,7 +51,9 @@ a {
     left: 0%;
     top: 100%;
     width: 70%;
+    z-index: 1;
 }
+
 
 .lista-menu__titulo {
     color: var(--laranja);
@@ -80,6 +82,7 @@ a {
 
 .checkbox:checked~.lista-menu {
     display: block;
+    z-index: 1;
 }
 
 .banner-container {
@@ -131,6 +134,10 @@ a {
 .swiper-pagination {
     position: initial;
     margin: 0.5rem 0;
+}
+
+.swiper {
+    z-index: 0;
 }
 
 .swiper-h2 {
